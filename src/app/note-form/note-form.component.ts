@@ -8,7 +8,7 @@ import { Note,FireLoopRef } from '../shared/sdk/models';
   styleUrls: ['./note-form.component.css']
 })
 export class NoteFormComponent {
-  private note: Note = new Note();
+  public note: Note = new Note();
   @Input('note-ref') reference : FireLoopRef<Note>;
   constructor() {}
 

@@ -9,7 +9,7 @@ import { Note,FireLoopRef } from '../shared/sdk/models';
 })
 export class NoteDetailComponent {
   @Input('fill') note: Note;
-  private mode : string;
+  public mode : string;
   @Input('note-ref') reference : FireLoopRef<Note>;
   constructor() {
     this.mode = 'view';

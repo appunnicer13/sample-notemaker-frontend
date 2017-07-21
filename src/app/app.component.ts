@@ -15,9 +15,8 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'Note App';
 
-  private note : Note = new Note();
-  private reference : FireLoopRef<Note>;
-  private notes: Observable<Note | Note[]>;
+  public reference : FireLoopRef<Note>;
+  public notes: Observable<Note | Note[]>;
 
 
   constructor(private realTime: RealTime) {

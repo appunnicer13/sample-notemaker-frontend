@@ -1,4 +1,6 @@
-# TodoClient
+# NotesClient
+
+This is fronend for simple-note-maker. [View](http://simpleapp1.appunni.xyz)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
