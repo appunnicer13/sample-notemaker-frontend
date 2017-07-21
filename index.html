@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TodoClient</title>
+  <base href="http://sampleapp1.appunni.xyz">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+<link href="styles.aa290c9286c71864d2c1.bundle.css" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root>
+<script type="text/javascript" src="inline.50274def19c5f224edb1.bundle.js"></script><script type="text/javascript" src="polyfills.011af17782fb4ff2f5d2.bundle.js"></script><script type="text/javascript" src="vendor.a3ae142427ce2f14cf91.bundle.js"></script><script type="text/javascript" src="main.0ebdc3aefeb0df1d571f.bundle.js"></script></body>
+</html>
