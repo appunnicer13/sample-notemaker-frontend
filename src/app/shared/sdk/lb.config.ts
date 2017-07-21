@@ -20,7 +20,7 @@
 * }
 **/
 export class LoopBackConfig {
-  private static path: string = '//0.0.0.0:3000';
+  private static path: string = '//ec2-52-38-51-128.us-west-2.compute.amazonaws.com';
   private static version: string | number = 'api';
   private static authPrefix: string = '';
   private static debug: boolean = true;
