@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <span class="center">Note Maker</span>
+</md-toolbar>
+<md-grid-list cols="4"  rowHeight="300px">
+    <md-grid-tile>
+      <note-form [note-ref]="reference" class="note-card"></note-form>
+    </md-grid-tile>
+    <md-grid-tile *ngFor="let note_i of notes | async">
+      <note-detail [fill]="note_i" [note-ref]="reference" class="note-card"></note-detail>
+    </md-grid-tile>
+</md-grid-list>
+
+

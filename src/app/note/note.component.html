@@ -1,0 +1,31 @@
+<div *ngIf="note">
+  <md-card *ngIf="mode=='view'" >
+    <md-card-title>
+      {{note.title}}
+    </md-card-title>
+    <md-card-content>
+      {{note.content}}
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button (click)="edit_mode()">Edit</button>
+      <button md-raised-button (click)="remove()">Delete</button>
+    </md-card-actions>
+  </md-card>
+  <!-- two types on modes -->
+  <md-card *ngIf="mode=='edit'">
+    <md-card-title>
+      <md-input-container class="example-full-width">
+        <input mdInput name="title" placeholder="Note Title" [(ngModel)]="note.title">
+      </md-input-container>
+
+    </md-card-title>
+    <md-card-content>
+      <md-input-container class="example-full-width">
+        <textarea mdInput name="content" placeholder="Note Content" [(ngModel)]="note.content"></textarea>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button (click)="update()">Update Note</button>
+    </md-card-actions>
+  </md-card>
+</div>

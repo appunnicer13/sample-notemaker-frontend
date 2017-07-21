@@ -1,0 +1,19 @@
+<form (submit)="add()">
+  <!-- two types on modes -->
+  <md-card>
+    <md-card-title>
+      <md-input-container class="example-full-width">
+        <input mdInput name="title" placeholder="Note Title" [(ngModel)]="note.title">
+      </md-input-container>
+
+    </md-card-title>
+    <md-card-content>
+      <md-input-container class="example-full-width">
+        <textarea mdInput name="content" placeholder="Note Content" [(ngModel)]="note.content"></textarea>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button>Add Note</button>
+    </md-card-actions>
+  </md-card>
+</form>

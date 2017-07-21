@@ -1,0 +1,8 @@
+.note-card{
+  flex-grow: 1;
+  margin: 12px;
+}
+.center{
+  text-align: center;
+  flex: 100%;
+}
